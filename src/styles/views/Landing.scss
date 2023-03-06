@@ -2,11 +2,11 @@
 
 .landing {
   &.container {
-    margin-top: 2em;
-    min-height: 300px;
+    margin-top: 1em;
+    min-height: 100px;
     /* we include the center mixin defined in _theme.scss and save three duplicate lines :) */
     @include center;
-    flex-direction: column;
+    flex-direction: row;
   }
 
   &.form {
@@ -55,5 +55,6 @@
     flex-direction: row;
     justify-content: space-between;
     margin-top: 2em;
+    margin-right: 1em;
   }
 }
