@@ -78,7 +78,7 @@ const Login = props => {
                             width="100%"
                             onClick={() => doLogin()}
                         >
-                            Login
+                            Register
                         </Button>
                     </div>
                 </div>
