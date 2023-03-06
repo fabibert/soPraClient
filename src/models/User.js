@@ -14,6 +14,7 @@ class User {
         //TODO: unused password and creationDate
         this.password = null;
         this.creationDate = null;
+        this.birthDay = null;
         Object.assign(this, data);
     }
 }
