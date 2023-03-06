@@ -18,19 +18,30 @@ const Landing = props => {
     return (
         <BaseContainer>
             <div className="landing container">
-                <div className="landing button-container">
-                    <Button
-                        onClick={handleLoginClick}
-                    >
-                        Login
-                    </Button>
-                </div>
-                <div className="landing button-container">
-                    <Button
-                        onClick={handleRegisterClick}
-                    >
-                        Register
-                    </Button>
+                <div className="landing form">
+                    <div className="landing align vertically">
+                        <div className="landing align horizontal">
+                            <div className="landing welcome-text">
+                                Welcome
+                            </div>
+                            <div className="landing button-holder">
+                                <div className="landing button-container">
+                                    <Button
+                                        onClick={handleLoginClick}
+                                    >
+                                        Login
+                                    </Button>
+                                </div>
+                                <div className="landing button-container">
+                                    <Button
+                                        onClick={handleRegisterClick}
+                                    >
+                                        Register
+                                    </Button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </BaseContainer>

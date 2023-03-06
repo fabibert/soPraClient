@@ -1,0 +1,17 @@
+.profile {
+    &.container {
+        margin-top: 1em;
+        min-height: 100px;
+        flex-direction: row;
+    }
+
+    &.info {
+        text-decoration-color: black;
+        margin-left: 2em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        Color: Black;
+        //background-color: cadetblue;
+    }
+}

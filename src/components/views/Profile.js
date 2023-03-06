@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import {api} from "../../helpers/api";
 import user from "../../models/User";
+import BaseContainer from "components/ui/BaseContainer";
+import 'styles/views/Profile.scss';
 
 const Profile = () => {
     const {id} = useParams();
@@ -20,27 +22,31 @@ const Profile = () => {
     }
 
     return (
-        <div>
-            {userData ? ( //TODO: maybe delete this line because covered in line 18-19
-                <div>
-                    <h1>User Information</h1>
-                    <p>
-                        <strong>Username:</strong> {userData.username}
-                    </p>
-                    <p>
-                        <strong>Status:</strong> {userData.status}
-                    </p>
-                    <p>
-                        <strong>CreationDate:</strong> {userData.creationDate}
-                    </p>
-                    <p>
-                        <strong>Birthday:</strong> {userData.birthDay}
-                    </p>
+        <BaseContainer>
+            <div className="profile container">
+                <div className="profile info">
+                {userData ? ( //TODO: maybe delete this line because covered in line 18-19
+                        <div>
+                            <h1>User Information</h1>
+                            <p>
+                                <strong>Username:</strong> {userData.username}
+                            </p>
+                            <p>
+                                <strong>Status:</strong> {userData.status}
+                            </p>
+                            <p>
+                                <strong>CreationDate:</strong> {userData.creationDate}
+                            </p>
+                            <p>
+                                <strong>Birthday:</strong> {userData.birthDay}
+                            </p>
+                        </div>
+                    ) : (
+                        <p>Loading...</p>
+                    )}
                 </div>
-            ) : (
-                <p>Loading...</p>
-            )}
-        </div>
+            </div>
+        </BaseContainer>
     );
 };
 
