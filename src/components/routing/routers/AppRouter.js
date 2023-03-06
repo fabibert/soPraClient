@@ -5,6 +5,7 @@ import {LandingGuard} from "components/routing/routeProtectors/LandingGuard";
 import Login from "components/views/Login";
 import Register from "components/views/Register";
 import Landing from "../../views/Landing";
+import Profile from "../../views/Profile";
 
 
 /**
@@ -42,6 +43,11 @@ const AppRouter = () => {
                 </Route>
                 <Route exact path="/">
                     <Redirect to="/game"/>
+                </Route>
+                <Route exact path="/users/:id">
+                    <GameGuard>
+                        <Profile/>
+                    </GameGuard>
                 </Route>
             </Switch>
         </BrowserRouter>
