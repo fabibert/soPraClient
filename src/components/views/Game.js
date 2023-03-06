@@ -33,7 +33,7 @@ const Game = () => {
 
     const logout = () => {
         localStorage.removeItem('token');
-        history.push('/login');
+        history.push('/landing');
     }
 
     const profile = (userid) => {
@@ -86,7 +86,7 @@ const Game = () => {
                     {users.map(user => (
                         <Player
                             user={user}
-                            key={user.id}
+                            //key={user.id}
                             onClick={() => profile(user.id)}
                         />
                     ))}
