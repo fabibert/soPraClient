@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {api, handleError} from "../../helpers/api";
+import {api} from "../../helpers/api";
 import {useHistory, useParams} from "react-router-dom";
 
 function Editor() {

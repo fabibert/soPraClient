@@ -1,10 +1,8 @@
 import {useEffect, useState} from "react";
 import {useHistory, useParams} from "react-router-dom";
-import {api, handleError} from "../../helpers/api";
-import user from "../../models/User";
+import {api} from "../../helpers/api";
 import BaseContainer from "components/ui/BaseContainer";
 import 'styles/views/Profile.scss';
-import User from "../../models/User";
 
 const Profile = () => {
     const {id} = useParams();
