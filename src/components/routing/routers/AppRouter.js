@@ -6,6 +6,7 @@ import Login from "components/views/Login";
 import Register from "components/views/Register";
 import Landing from "../../views/Landing";
 import Profile from "../../views/Profile";
+import Editor from "../../views/Editor";
 
 
 /**
@@ -47,6 +48,11 @@ const AppRouter = () => {
                 <Route exact path="/users/:id">
                     <GameGuard>
                         <Profile/>
+                    </GameGuard>
+                </Route>
+                <Route exact path="/users/:id/editor">
+                    <GameGuard>
+                        <Editor/>
                     </GameGuard>
                 </Route>
             </Switch>
