@@ -86,7 +86,7 @@ const Game = () => {
                     {users.map(user => (
                         <Player
                             user={user}
-                            //key={user.id}
+                            key={user.id}
                             onClick={() => profile(user.id)}
                         />
                     ))}
